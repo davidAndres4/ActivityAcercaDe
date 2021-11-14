@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bMostrar" />
+
+        <Button
+            android:id="@+id/bPreferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bPreferencias" />
+
+        <Button
+            android:id="@+id/bAcercaDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bAcercaDe"
+            android:onClick="lanzarAcercaDe"/>
+
+        <Button
+            android:id="@+id/bSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bSalir" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
